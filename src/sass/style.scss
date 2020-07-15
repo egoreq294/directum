@@ -18,6 +18,18 @@ $desktop: 1919px;
         height: 50px;
     }
 }
+.menu_button{
+    @media (min-width: $tablet) {
+        display: none;
+    }
+    margin: 15px 0 0 15px;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
 .header_menu{
     @media (min-width:$desktop){
         display: flex;
@@ -89,6 +101,9 @@ $desktop: 1919px;
     background-color: #2F418A;
     color: #ffffff;
     border-radius: 8px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
 }
 .first_text{
     font-family: Segoe UI;
@@ -382,4 +397,56 @@ td{
     line-height: 16px;
     text-align: center;
     color: #BABABA;
+}
+.display_none{
+    display: none;
+}
+.form{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.reg_form{
+    position: relative;
+    width: 404px;
+    height: 252px;
+    background-color: #ffffff;
+    display: block;
+    margin: 50px auto 0 auto;
+}
+.form_text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 27px;
+    color: #9FA3AB;
+    padding: 32px 0 10px 32px;;
+}
+.form_button{
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    outline: none;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+.input_reg{
+    width: 320px;
+    height: 28px;
+    margin: 20px 0 0 32px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #B5BFC3;
+    padding-left: 15px;
+}
+.form_reg_button{
+    width: 127px;
+    height: 40px;    
 }

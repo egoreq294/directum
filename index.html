@@ -9,6 +9,7 @@
 <body>
     <div class="wrapper">
         <header class="header">
+            <button type="button" class="menu_button"><img src="./src/img/menu.png" alt=""></button>
             <ul class="header_menu">
                 <li><a href="#">О мероприятии</a></li>
                 <li><a href="#">Регистрация</a></li>
@@ -22,7 +23,7 @@
                 <p class="first_text">НАЗВАНИЕ МЕРОПРИЯТИЯ</p>
                 <p class="second_text">4 МАЯ 2049</p>
                 <p class="third_text">в самом сердце страны</p>
-                <input class="reg_button" type="button" value="Регистрация">
+                <input class="reg_button" type="button" value="Регистрация" id="reg_button">
             </div>
         </div>
         <div class="text_block">
@@ -106,6 +107,16 @@
             <p class="footer_text">© DIRECTUM, 2019</p>
         </footer>
     </div>
+    <div class="form display_none">
+        <form class="reg_form">
+            <p class="form_text">Регистрация</p>
+            <button type="button" class="form_button" id="close_button"> <img src="./src/img/close.png" alt=""> </button>
+            <input class="input_reg" type="text" name="name" placeholder="ФИО" required="">
+            <input class="input_reg" type="email" name="email" placeholder="Email" required="">
+            <button class="form_reg_button reg_button" type="submit">Регистрация</button>
+        </form>
+    </div>
+    
 
 </body>
 </html>
