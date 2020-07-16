@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <title>Directum</title>
 </head>
 <body>
@@ -11,13 +15,13 @@
         <header class="header">
             <button type="button" class="menu_button"><img src="./src/img/menu.png" alt=""></button>
             <ul class="header_menu">
-                <li><a href="#">О мероприятии</a></li>
-                <li><a href="#">Регистрация</a></li>
-                <li><a href="#">Стоимость участия</a></li>
-                <li><a href="#">Спикеры</a></li>
+                <li><a href="#banner">О мероприятии</a></li>
+                <li><a href="#textblock">Регистрация</a></li>
+                <li><a href="#table">Стоимость участия</a></li>
+                <li><a href="#speakers">Спикеры</a></li>
             </ul>
         </header>
-        <div class="banner">
+        <div class="banner" id="banner">
             <div class="banner_center">
                 <img src="./src/img/logo.png" alt="logo">
                 <p class="first_text">НАЗВАНИЕ МЕРОПРИЯТИЯ</p>
@@ -26,7 +30,7 @@
                 <input class="reg_button" type="button" value="Регистрация" id="reg_button">
             </div>
         </div>
-        <div class="text_block">
+        <div class="text_block" id="textblock">
             <div class="text_block--info">
                 <p class="text_block--info--h1">Дорогие друзья!</p>
                 <p class="text_block--info--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -45,7 +49,7 @@
                 </div>
             </div>
         </div>
-        <div class="table">
+        <div class="table" id="table">
             <p class="table_h1">Стоимость участия</p>
             <p class="table_text">(на 1 человека)</p>
             <table>
@@ -66,7 +70,18 @@
                 </tr>
             </table>
         </div>
-        <div class="speakers">
+        <div class="gallery">
+            <p class="gallery_h1">Галерея</p>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img id="slide0" src="./src/img/slide0.png" alt=""></div>
+                  <div class="swiper-slide"><img id="slide1" src="./src/img/slide1.png" alt=""></div>
+                  <div class="swiper-slide"><img id="slide2" src="./src/img/slide2.png" alt=""></div>                 
+                </div>                
+                <div class="swiper-pagination"></div>
+            </div>            
+        </div>
+        <div class="speakers" id="speakers">
             <p class="speakers_text_desktop">Наши спикеры</p>
             <p class="speakers_text_tablet">Готовятся к общению</p>
             <div class="speakers_elements">
@@ -116,7 +131,9 @@
             <button class="form_reg_button reg_button" type="submit">Регистрация</button>
         </form>
     </div>
-    
 
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>    
 </body>
 </html>

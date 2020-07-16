@@ -2,8 +2,10 @@
 $mobile:319px;
 $tablet:767px;  
 $desktop: 1919px;
+html {
+    scroll-behavior: smooth;
+}
 .wrapper{
-    max-width: 1920px;
     min-width: 320px;
     position: relative;
     padding-bottom: 150px;
@@ -244,6 +246,9 @@ $desktop: 1919px;
     @media (max-width:$desktop) and  (min-width: $tablet) {
         height: 398px;
     }
+    @media (max-width: $tablet) {
+        height: 415px;
+    }
 }
 .table_h1{
     padding-top: 48px;
@@ -449,4 +454,52 @@ td{
 .form_reg_button{
     width: 127px;
     height: 40px;    
+}
+.gallery{
+    background-color: #F8F9FA;
+    position: relative;
+    height: 100%;
+}
+.gallery_h1{
+    padding: 48px 0 20px 0;
+    margin: auto;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 43px;
+    text-align: center;
+    color: #000000;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;    
+    justify-content: center;    
+    align-items: center;
+  }
+
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #007aff;
+  }
+  .swiper-slide img{
+    width: 100%;
 }
